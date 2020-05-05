@@ -1,1 +1,1 @@
-web: gunicorn Vefverk5:app
+web: gunicorn LokaverkVef:app
