@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/styru.css" type="text/css" />
+    <title>Delete</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/user">Account</a>
+    </nav>
+
+    <h1>Delete</h1>
+    <form action="/eydago" method="post">
+        <label for="robo">Choose a recipe to delete:</label>
+        <select id="robo" name="robo">
+            {% for i in allrecipes %}
+            <option value="{{i[0]}}">{{i[1]}}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="select" />
+    </form>
+</body>
+</html>

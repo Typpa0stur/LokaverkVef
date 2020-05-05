@@ -1,0 +1,36 @@
+body {
+    background-color: #0ac4ae;
+}
+
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #750a81;
+}
+
+input[type=text] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+textarea {
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+a:visited {
+    color: #663300;
+}
+
+a:hover {
+    color: #ff5050;
+}

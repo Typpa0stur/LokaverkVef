@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/hinsegin.css" type="text/css" />
+    <title>Add recipe</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/user">Account</a>
+    </nav>
+
+    <h1>Change your recipe.</h1>
+
+    <form action="/breytago" method="post">
+        <label for="robo">Choose a recipe to change:</label>
+        <select id="robo" name="robo">
+            {% for i in allrecipes %}
+            <option value="{{i[0]}}">{{i[1]}}</option>
+            {% endfor %}
+        </select><br />
+        <label for="rename">Name of recipe:</label><br />
+        <input type="text" id="rename" name="rename" /> <br />
+        <label for="description">Description:</label><br />
+        <textarea id="description" name="description" rows="10" cols="50"></textarea><br /><br />
+        <input type="submit" value="submit" />
+    </form><br /><br /><br />
+
+</body>
+</html>

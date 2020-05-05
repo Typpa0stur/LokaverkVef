@@ -1,0 +1,27 @@
+﻿{% extends "http.html" %}
+
+<meta charset="utf-8" />
+{% block titill %}
+    Recipes
+{% endblock %}
+
+{% block innihald %}
+<h3><a href="/">Home</a></h3>
+<h3><a href="/user">Account</a></h3>
+<br />
+
+<table>
+    <caption><h2>All recipes</h2></caption>
+    <tbody>
+        <tr>
+            <th><h3>Recipe</h3></th>
+            {% for i in allrecipes %}
+            <tr>
+                <td><a href="/see/{{i[0]}}">{{i[1]}}</a></td>
+            </tr>
+            {% endfor %}
+        </tr>
+    </tbody>
+</table>
+
+{% endblock %}

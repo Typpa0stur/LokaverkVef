@@ -1,0 +1,24 @@
+﻿{% extends "http.html" %}
+
+<meta charset="utf-8" />
+{% block titill %}
+    Recipe
+{% endblock %}
+
+{% block innihald %}
+<nav>
+    <a href="/">Home</a>
+    <a href="/user">Account</a>
+    <a href="/see"><h3>List of recipes</h3></a>
+</nav>
+
+<h1>{{allrecipes[1]}}</h1>
+<br />
+
+<h3>{{allrecipes[2]}}</h3>
+
+<br />
+<br />
+
+<p>Made by {{allrecipes[3]}}</p>
+{% endblock %}
